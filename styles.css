@@ -291,7 +291,7 @@
     .tooltip-text {
     visibility: visible;
     opacity: 1;
-    bottom: 16px;
+    bottom: 12%;
     right: 16px;
     position: fixed;
     text-decoration: none;
