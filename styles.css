@@ -322,6 +322,57 @@
   transition: 0.7s;
 }
 
+.pasos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+
+    div{
+      width: 20%;
+      min-width: 180px;
+      background: linear-gradient(320deg, #025f1ff3, #025f1f9b, #ffffffd7, #ffffffb3);
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
+      padding: 16px;
+      border-radius: 8px;
+      min-height: 100px;
+      transition: .7s ease;
+
+  }
+
+  div:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.849);
+    background: linear-gradient(335deg, #025f1ff3, #025f1f9b, #ffffffd7, #ffffffb3);
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+
+    img{
+      width: 40%;
+      min-width: 380px;
+      border-radius: 16px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
+    }
+
+}
+
+.textwrapper{
+  width: 50%;
+  min-width: 380px;
+}
 
  @media (max-width: 768px) {
       nav a {
