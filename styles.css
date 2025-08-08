@@ -74,7 +74,11 @@
     section {
       width: 100vw;
       padding: 5rem 2rem;
-      max-width: 1200px;
+      max-width: 1400px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
     #inicio{
@@ -191,10 +195,11 @@
       max-width: 760px;
       border-radius: 64px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      justify-content: left;
 
             h2{
                 background-color: rgba(255, 255, 255, 0.918);
-                padding: 40px 6px 6px 75px;
+                padding: 40px 75px 6px 75px;
                 margin-top: -64px;
                 margin-left: -64px;
                 max-width: 450px;
@@ -322,6 +327,19 @@
   transition: 0.7s;
 }
 
+.metodo{
+  p{
+    max-width: 1200px;
+  }
+}
+
+.equipo{
+  h2{
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
 .pasos {
   display: flex;
   flex-wrap: wrap;
@@ -369,8 +387,29 @@
 
 }
 
+.wrapper2 {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+
+    img{
+      width: 40%;
+      min-width: 380px;
+      border-radius: 16px;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
+    }
+
+}
+
 .textwrapper{
-  width: 50%;
+  width: 54%;
   min-width: 380px;
 }
 
