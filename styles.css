@@ -447,6 +447,13 @@
         right: -60px;
         min-width: 290px;
       }
+
+      .tooltip-text{
+        width: 90%;
+        left: 5%;
+        bottom: 24px!important;
+        font-size: 12px;
+      }
     }
 
 
