@@ -339,10 +339,26 @@
 }
 
 .equipo{
+
+  .wrapper, .wrapper2{
+    position: sticky;
+    top: 18vh;
+    min-height: 70vh;
+    background: linear-gradient(180deg, #ffffff,#ffffff, rgba(255, 255, 255, 0.868));
+    border-radius: 16px;
+    border: #1a104d 1px solid;
+  }
+
   h2{
     width: 100%;
     max-width: 1200px;
+    position: sticky;
+    top:10vh
   }
+}
+
+.formaparte{
+  margin-top: -100px;
 }
 
 .pasos {
