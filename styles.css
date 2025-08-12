@@ -271,7 +271,7 @@
     
     }
 
-    .card:hover {
+    .card.active {
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.12);
             h4{
         z-index: 2;
@@ -516,3 +516,5 @@
   opacity: 1;
 }
 }
+
+
