@@ -176,6 +176,22 @@
     once: true // Se ejecuta solo la primera vez
   });
   </script>
+  <script>
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    // Si la card ya está activa, la desactiva
+    if (card.classList.contains('active')) {
+      card.classList.remove('active');
+    } else {
+      // Elimina active de todas
+      document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+      // Activa la clicada
+      card.classList.add('active');
+    }
+  });
+});
+  </script>
 </body>
 
 </html>
+
