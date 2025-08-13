@@ -235,7 +235,7 @@
       padding: 2rem;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
-      height: 95px;
+      height: 80px;
       color: white;
       min-width: 330px;
       cursor: pointer;
@@ -268,7 +268,7 @@
     }
 
     #saber{
-        bottom: 75px;
+        bottom: 72px;
     }
     
     }
@@ -580,5 +580,6 @@
   opacity: 1;
 }
 }
+
 
 
