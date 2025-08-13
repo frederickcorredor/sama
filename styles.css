@@ -96,6 +96,7 @@
     padding-left: 10%;
       background-position: center;
       position: relative;
+      z-index: 3;
       width: 98vw;
       max-width: 1600px;
       border-bottom-left-radius: 64px;
@@ -182,7 +183,8 @@
 }
 
 #servicios{
-
+      position: relative;
+      z-index: 2;
       padding: 2rem 1rem;
       border-radius: 16px;
       margin-top: 24px;
@@ -236,7 +238,7 @@
       height: 95px;
       color: white;
       min-width: 330px;
-
+      cursor: pointer;
       h4{
         position: relative;
         z-index: 2;
@@ -293,7 +295,7 @@
     visibility: visible;
     opacity: 1;
     bottom: 12%;
-    right: 16px;
+    right: 5vw;
     position: fixed;
     text-decoration: none;
     transition: .7s ease;
@@ -333,17 +335,25 @@
 }
 
 .metodo{
+  margin-top: 16px;
+  position: relative;
+  z-index: 4;
+  background-color: white;
+  width: 100%;
+  border-radius: 16px;
   p{
     max-width: 1200px;
   }
 }
 
 .equipo{
-
+   position: relative;
+  z-index: 4;
+  background-color: white;
   .wrapper, .wrapper2{
     position: sticky;
     top: 18vh;
-    min-height: 70vh;
+    min-height: 76vh;
     background: linear-gradient(180deg, #ffffff,#ffffff, rgba(255, 255, 255, 0.868));
     border-radius: 16px;
     border: #1a104d 1px solid;
@@ -358,7 +368,10 @@
 }
 
 .formaparte{
-  margin-top: -100px;
+   position: relative;
+  z-index: 3;
+  background-color: white;
+  margin-top: -150px;
 }
 
 .pasos {
@@ -370,21 +383,25 @@
   width: 100%;
 
     div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 20%;
       min-width: 180px;
-      background: linear-gradient(320deg, #025f1ff3, #025f1f9b, #ffffffd7, #ffffffb3);
+      background: rgb(5 48 79 / 86%);
+      color: white;
       box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
       padding: 16px;
       border-radius: 8px;
       min-height: 100px;
       transition: .7s ease;
+      text-align: center;
 
   }
 
   div:hover {
     transform: translateY(-10px);
     box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.849);
-    background: linear-gradient(335deg, #025f1ff3, #025f1f9b, #ffffffd7, #ffffffb3);
   }
 }
 
@@ -435,13 +452,13 @@
   background: rgba(255, 255, 255, 0.856);
   padding: 16px;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
 
 }
 
 .flechita{
   font-size: 24px;
-  color: var(--color-verde);
+  color: rgb(5 48 79 / 86%);
   padding-left: 8px;
   transition: .7s ease;}
 
@@ -451,6 +468,10 @@
         margin-left: 1rem;
         font-size: 0.95rem;
         display: none;
+      }
+
+      p{
+        font-size: 0.9rem;
       }
 
       #inicio{
@@ -505,8 +526,35 @@
         height: 100%;
 
       }
+
+
+      
     }
 
+    .equipo{
+      h2{
+        position: static !important;
+      }
+    }
+
+    .wrapper, .wrapper2 {
+      position: static !important;
+
+          .textwrapper{
+            padding-top: 16px;
+            width: 100%;
+            min-width: 280px;
+          }
+          .imagenwrapper{
+          width: 80%;
+          min-width: 280px;
+
+      }
+    }
+
+    .formaparte{
+  margin-top: -100px;
+}
   }
      @-webkit-keyframes slide-in-bottom {
 0% {
