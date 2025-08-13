@@ -260,8 +260,8 @@
 
     .saber{
       position: relative;
-      bottom: 50px;
-      left: 200px;
+      bottom: 58px;
+      left: 210px;
       font-size: 12px;
       cursor: pointer;
       transition: .7s ease;
@@ -580,6 +580,7 @@
   opacity: 1;
 }
 }
+
 
 
 
