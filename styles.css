@@ -73,7 +73,7 @@
 
     section {
       width: 100vw;
-      padding: 5rem 2rem;
+      padding: 2rem;
       max-width: 1400px;
       display: flex;
       flex-wrap: wrap;
@@ -228,6 +228,13 @@
       color: var(--color-azul-oscuro);
     }
 
+    .divservicios {
+     max-width: 1400px;
+     width: 100%;
+     background-color: white;
+     padding: 1rem 2rem;
+    }
+
 .card {
         background: rgb(5 48 79 / 86%);
       border-left: 6px solid var(--color-verde);
@@ -237,7 +244,7 @@
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       height: 80px;
       color: white;
-      min-width: 330px;
+      min-width: 315px;
       cursor: pointer;
       h4{
         position: relative;
@@ -260,7 +267,7 @@
 
     .saber{
       position: relative;
-      bottom: 58px;
+      bottom: 70px;
       left: 210px;
       font-size: 12px;
       cursor: pointer;
@@ -335,14 +342,24 @@
 }
 
 .metodo{
-  margin-top: 16px;
+
   position: relative;
   z-index: 4;
   background-color: white;
   width: 100%;
-  border-radius: 16px;
+  
+
+
+  .wrapper{
+      border: #1a104d 1px solid;
+      border-radius: 16px;
+  }
   p{
     max-width: 1200px;
+  }
+
+  h3{
+    width: 100%;
   }
 }
 
@@ -354,7 +371,6 @@
     position: sticky;
     top: 18vh;
     min-height: 76vh;
-    background: linear-gradient(180deg, #ffffff,#ffffff, rgba(255, 255, 255, 0.868));
     border-radius: 16px;
     border: #1a104d 1px solid;
   }
@@ -371,7 +387,7 @@
    position: relative;
   z-index: 3;
   background-color: white;
-  margin-top: -150px;
+  margin-top: -45px;
 }
 
 .pasos {
@@ -413,9 +429,9 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
-  padding: 2rem;
-
+  padding: 16px;
+  margin-bottom: 2rem;
+  background-color: rgba(233, 233, 233, 0.932);
     img{
       width: 40%;
       min-width: 380px;
@@ -434,8 +450,9 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-bottom: 2rem;
+  padding: 6px;
+  background-color: rgba(233, 233, 233, 0.932);
 
     img{
       width: 40%;
@@ -482,6 +499,10 @@
         padding-left: 16px;
       }
 
+      .divservicios {
+        padding: 2px;
+      }
+
       header{
         width: 100%;
         padding: 0.3rem;
@@ -512,6 +533,7 @@
 
       #servicios{
         padding: 2rem 1rem;
+        z-index: 5;
       }
 
       .pasos{
@@ -539,6 +561,7 @@
 
     .wrapper, .wrapper2 {
       position: static !important;
+      margin-top: 16px;
 
           .textwrapper{
             padding-top: 16px;
@@ -552,9 +575,7 @@
       }
     }
 
-    .formaparte{
-  margin-top: -100px;
-}
+
   }
      @-webkit-keyframes slide-in-bottom {
 0% {
@@ -580,7 +601,6 @@
   opacity: 1;
 }
 }
-
 
 
 
