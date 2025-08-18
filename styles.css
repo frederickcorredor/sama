@@ -16,14 +16,13 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      background:  cornflowerblue;
-      background: radial-gradient(circle at top  , #0a2fd6, rgba(30, 155, 238, 0.801), rgba(30, 155, 238, 0.801),  rgba(255, 255, 255, 0.918), #008538);
+      background: radial-gradient(circle at bottom ,  rgba(255, 255, 255, 0.918),#9e9e9e18);
       
     }
 
     header {
       background: linear-gradient(135deg, #ffffffcc, #fffffff6);
-      padding: 1rem 4rem;
+      padding: 2px 4rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -71,6 +70,10 @@
       padding: 6px;
     }
 
+    p{
+      font-size: 14px;
+    }
+
 
     section {
       width: 100vw;
@@ -83,8 +86,8 @@
     }
 
     #inicio{
-      margin-top: -88px;
-      background-image: url('fondobanner.gif');
+      margin-top: -90px;
+      background-image: url('https://samamarketresearch.co/wp-content/uploads/2025/08/fondobanner.gif');
       min-height: 85vh;
       background-size: cover;
       display: flex;
@@ -183,24 +186,30 @@
     animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
+h4{
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #008538;
+}
+
 #servicios{
-      position: relative;
+
       z-index: 2;
       padding: 2rem 16px;
       border-radius: 16px;
       margin-top: 24px;
-      background-image: url('fondovideo2.gif');
+      background-image: url('https://samamarketresearch.co/wp-content/uploads/2025/08/fondovideo2.gif');
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
       overflow: hidden;
       width: 98vw;
-      max-width: 620px;
+      max-width: 650px;
       border-radius: 64px;
       box-shadow: 0 4px 6px rgb(0 0 0 / 52%);
       justify-content: left;
       border: 1px solid white;
-
+      margin-bottom: 16px;
             h2{
                 background-color: rgba(255, 255, 255, 0.918);
                 padding: 40px 75px 6px 75px;
@@ -208,6 +217,7 @@
                 margin-left: -64px;
                 max-width: 450px;
                 border-radius: 6px 36px 136px 36px;
+                color: #008538;
                 
             }
     }
@@ -220,7 +230,7 @@
       align-items: center;
       gap: 1rem;
       margin-top: 2rem;
-      max-width: 800px;
+
 
     }
 
@@ -233,7 +243,8 @@
     .divservicios {
      max-width: 1400px;
      width: 100%;
-     padding: 1rem 2rem;
+     position: relative;
+     overflow: hidden;
     }
 
 .card {
@@ -253,6 +264,8 @@
         transition: .7s ease;
         max-width: 220px;
         font-size: 14px;
+        margin-bottom: 0px;
+        color: white;
       }
 
           .icono{
@@ -281,7 +294,7 @@
     
     }
 
-    .card.active {
+    .card:hover {
       box-shadow: 0 12px 16px rgba(0, 0, 0, 0.12);
             h4{
         z-index: 2;
@@ -304,7 +317,7 @@
     opacity: 1;
     bottom: 12%;
     right: 5vw;
-    position: fixed;
+    position: absolute;
     text-decoration: none;
     transition: .7s ease;
     
@@ -343,7 +356,8 @@
 }
 
 .metodo{
-
+  border-radius: 16px;
+  border: #1a104d 1px solid;
   position: relative;
   z-index: 4;
   width: 100%;
@@ -357,22 +371,49 @@
   }
   p{
     max-width: 1200px;
+    margin-bottom: 24px;
   }
 
   h3{
     width: 100%;
     text-align: center;
     font-size: 30px;
+    color: #008538;
+
   }
+}
+
+#meto{
+  text-align: left;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.textometodo{
+  width: 50%;
+    padding: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#imagenmetodo{
+  position: relative;
+  right: 50px;
 }
 
 .equipo{
    position: relative;
   z-index: 4;
+  bottom: 20px;
 
   .wrapper, .wrapper2{
     position: sticky;
-    top: 18vh;
+    top: 11vh;
     min-height: 76vh;
     border-radius: 16px;
     border: #1a104d 1px solid;
@@ -385,11 +426,13 @@
     font-size: 30px;
     padding: 16px;
     text-align: center;
+    color: #008538;
   }
 }
 
 .wrapper,.wrapper2{
-  background-color: #f8f8f8;
+  background:linear-gradient(135deg, #b4d0e2,#0c5c91fb, #fffffff6);
+
 }
 
 .formaparte{
@@ -404,6 +447,9 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  position: absolute;
+  bottom: 120px;
+  left: 6px;
   width: 100%;
 
     div{
@@ -412,20 +458,27 @@
       align-items: center;
       width: 20%;
       min-width: 180px;
-      background: rgb(5 48 79 / 86%);
+      background:linear-gradient(135deg, #b4d0e2,#0c5c91fb, #fffffff6);
       color: white;
-      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.733);
       padding: 16px;
-      border-radius: 8px;
-      min-height: 100px;
+      border: 1px solid #85bef3;
+      border-radius: 36px;
+      min-height: 75px;
       transition: .7s ease;
       text-align: center;
+
+      p{
+        margin-bottom: 0px;
+      }
 
   }
 
   div:hover {
-    transform: translateY(-10px);
-    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.849);
+
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.767);
+    background:linear-gradient(155deg,#0c5c91fb);
+    
   }
 }
 
@@ -441,8 +494,8 @@
   margin-bottom: 2rem;
 
     img{
-      width: 40%;
-      min-width: 380px;
+      width: 36%;
+      min-width: 330px;
       border-radius: 16px;
       box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
     }
@@ -474,11 +527,37 @@
 .textwrapper{
   width: 54%;
   min-width: 380px;
-  background: rgba(255, 255, 255, 0.856);
+  background: rgb(255, 255, 255);
   padding: 16px;
   border-radius: 12px;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
   border: 2px solid #ebebeb;
+
+    ul{
+      margin-left: 16px;
+      list-style: inside;}
+
+      li{
+        margin-bottom: 16px;
+      }
+}
+
+.textwrapper2{
+  width: 90%;
+  min-width: 380px;
+  background: rgb(255, 255, 255);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.849);
+  border: 2px solid #ebebeb;
+
+    ul{
+      margin-left: 16px;
+      list-style: inside;}
+
+      li{
+        margin-bottom: 16px;
+      }
 }
 
 .flechita{
@@ -488,7 +567,76 @@
   transition: .7s ease;}
 
 
+  .trabajaconnosotros{
+    position: relative;
+    z-index: 3;
+    width: 98vw;
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    bottom: 50px;
+
+    h2{
+      width: 100%;
+      text-align: center;
+      padding: 16px;
+      font-size: 30px;
+      color: #008538;
+    }
+
+            p{
+              width: 100%;
+              max-width: 800px;
+              padding: 16px;
+            }
+  }
+
+  #elementofijo{
+  position: sticky;
+  top: 64px;
+  transform: scaleX(-1);
+    transform-origin: center;
+  }
+
+
+  #contacto{
+    position: relative;
+    bottom: 50px;
+  }
+
+      form input, form textarea {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: var(--color-rojo);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover { background-color: #b8003f; }
+
+
+
+
  @media (max-width: 768px) {
+
+    body{
+      background: #f1f1f1;
+    }
       nav a {
         margin-left: 1rem;
         font-size: 0.95rem;
@@ -500,7 +648,7 @@
       }
 
       #inicio{
-        min-height: 94vh;
+        min-height: 88vh;
         justify-content: flex-start;
         margin-top: -80px;
         padding-top: 90px;
@@ -526,7 +674,8 @@
       }
 
       .imagenbanner{
-        right: -60px;
+        right: -75px;
+        bottom: -20px;
         min-width: 290px;
       }
 
@@ -596,7 +745,22 @@
           bottom: 55px;
         }
     }
+
+      .metodo{
+        padding: 4px;
+            .wrapper{
+              background-color: #f8f8f8;
+              border: #1a104d 1px solid;
+            }
+
+
+          #textometodo{
+        position: relative;
+          left: 0px;
+          top: 0px;
+      }
   }
+}
      @-webkit-keyframes slide-in-bottom {
 0% {
   -webkit-transform: translateY(1000px);
@@ -621,6 +785,5 @@
   opacity: 1;
 }
 }
-
 
 
