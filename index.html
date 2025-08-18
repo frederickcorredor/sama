@@ -180,16 +180,22 @@
 
                 <section class="formaparte" id="formaparte">
             <div class="wrapper2" data-aos="fade-up"  data-aos-duration="1000" style="background: rgba(250, 235, 215, 0);">
-                    <img src="https://samamarketresearch.co/wp-content/uploads/2025/08/encuestador.webp" alt="" class="imagenwrapper">
-                    <div class="textwrapper">
-                        <h4>Forma parte de nuestro equipo</h4>
-                    <p>
-                        Únete a nuestro equipo y sé parte del crecimiento de una empresa comprometida con la excelencia en investigación de mercados. <br><br>
-                        Aquí, cada dato cuenta y cada voz importa. Formarás parte de un equipo apasionado que escucha, aprende y transforma información en decisiones estratégicas. <br><br>
-                        Encuestadoras(es), supervisoras(es), reclutadoras(es), codificadoras(es), psicólogas(os). <br><br>
-                        ¡Tu talento puede marcar la diferencia!
-                    </p>
-                </div>
+                <img src="https://samamarketresearch.co/wp-content/uploads/2025/08/encuestador.webp" alt="" class="imagenwrapper">
+                <div class="textwrapper">
+                    <h4>Forma parte de nuestro equipo</h4>
+                <p>
+                    Únete a nuestro equipo y sé parte del crecimiento de una empresa comprometida con la excelencia en investigación de mercados. <br><br>
+                    Aquí, cada dato cuenta y cada voz importa. Formarás parte de un equipo apasionado que escucha, aprende y transforma información en decisiones estratégicas. <br><br>
+                    Encuestadoras(es), supervisoras(es), reclutadoras(es), codificadoras(es), psicólogas(os). <br><br>
+                    ¡Tu talento puede marcar la diferencia!
+                </p>
+                <button class="hojadevida" onclick="hojaDeVida()">Enviar hoja de vida</button>
+            </div>
+            <div class="formularioHojaDeVida" id="formularioHojaDeVida">
+                <span class="cerrar" onclick="cerrarFormulario()">&times; Cerrar</span>
+                
+
+            </div>
         </section>
 
         <section class="trabajaconnosotros" id="formaparte">
@@ -228,19 +234,20 @@
 
 
 
-    <section id="contacto">
-        <div class="wrapper" data-aos="fade-up"  data-aos-duration="1000">
-            <div style="width: 35%;min-width: 380px;">
+    <section id="contacto" >
+        <div class="wrapper" data-aos="fade-up"  data-aos-duration="1000" style="background: white;">
+            <div style="width: 35%;min-width: 340px;">
                 <h2 class="section-title">Ubicación</h2>
-                <p class="section-text">Cra. 11 #93-52, Bogotá, Colombia</p>
+                <p class="section-text">Cra. 37 # 33 - 45, <br> Br Ciudad Verde, Soacha, Cundinamarca</p>
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7644359392133!2d-74.05932328523813!3d4.674676743016086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ab7d0b87191%3A0x1f1a0f246014f81!2sCra.%2011%20%2393-52%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1695999999999"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.90973819191!2d-74.22082274672209!3d4.610175978632094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f75f54ca5bce1%3A0xd6d0d49021914ddf!2sCra.%2037%20%2333-45%2C%20Soacha%2C%20Cundinamarca%2C%20Colombia!5e0!3m2!1ses!2sus!4v1755555614408!5m2!1ses!2sus"
                 allowfullscreen=""
                 loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
         
-            <div style="width: 40%;min-width: 380px;">
+            <div style="width: 40%;min-width: 340px;">
             <h2 class="section-title">Contáctanos</h2>
             <form action="https://formsubmit.co/tuemail@correo.com" method="POST">
             <input type="text" name="nombre" placeholder="Nombre completo" required autocomplete="name" />
@@ -256,12 +263,34 @@
         </div>
     </section>
 
+    <footer>
+       <section style="width: 100%;max-width: 1200px;text-align: center;">
+         <p>
+            Sama Market Research S.A.S. se acoge a lo establecido en la Ley 1581 de 2012, por medio de la cual se dictan disposiciones generales para la protección de datos personales en Colombia, así como a las normas reglamentarias y actualizaciones posteriores que regulan su aplicación.
+        </p>
+        <div>
+            <h5>Más información sobre la ley disponible aquí:</h5>
+        <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981" target="_blank">Ley 1581 de 2012 - Protección de datos personales</a>
+        </div>
+       </section>
+    </footer>
+
     </main>
  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
      AOS.init({
     once: true // Se ejecuta solo la primera vez
   });
+  </script>
+
+  <script>
+    function hojaDeVida() {
+        document.getElementById("formularioHojaDeVida").style.display = "block";
+    }
+
+    function cerrarFormulario() {
+        document.getElementById("formularioHojaDeVida").style.display = "none";
+    }
   </script>
   
 </body>
